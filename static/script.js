@@ -1,9 +1,9 @@
 
     var win    = $( this );
-    var width  = api.tool.desktopWidth();
-    var height = api.tool.desktopHeight() - 70;
-    var left   = ( wz.tool.environmentWidth() / 2 ) - ( width / 2 );
-    var top    = ( wz.tool.environmentHeight() / 2 ) - ( height / 2 );
+    var width  = 730;
+    var height = 400;
+    var left   = ( api.tool.environmentWidth() / 2 ) - ( width / 2 );
+    var top    = ( api.tool.environmentHeight() / 2 ) - ( height / 2 );
     var windowObject = api.popup( 'http://www.1001tracklists.com/', width, height ).render();
 
     var timer = setInterval( function(){
@@ -12,7 +12,6 @@
 
             wz.view.remove();
             clearInterval( timer );
-
         }
 
     }, 500 );
